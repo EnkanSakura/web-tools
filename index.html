@@ -8,26 +8,7 @@
 </head>
 
 <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
-<script>
-    base_url = "https://enkansakura.github.io/web-tools/";
-    var tool_name = [
-        "R6分队工具",
-        "苏联笑话生成器"
-    ];
-    var tool_url = [
-        "r6-group",
-        "soviet-joke"
-    ];
-    var resString = "";
-    var numbers = tool_name.length;
-    for (var i = 0; i < numbers; ++i) {
-        resString += "<a href=\"" + base_url + tool_url[i] + "\">" + tool_name[i] + "</a><br /><br />";
-    }
-    $(document).ready(function () {
-        $("#tool_list").css("font-size", "20px");
-        $("#tool_list").html(resString);
-    });
-</script>
+<script src="./js/index.js"></script>
 
 <body style="text-align: center;">
     <h1>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽签工具</title>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
+    <script src="../js/draw-lots.js"></script>
+</head>
+
+<body style="font-size: 20px; text-align: center;">
+    <div class="container">
+        <h1>抽签工具</h1>
+
+        <div style="text-align: end; font-size: 15px;">
+            <!-- 指针放在上面显示帮助信息 -->
+            help
+        </div>
+
+        <div class="form-group">
+            <!-- 签上的内容 -->
+            <form role="form">
+                <label for="name">向签上写：</label>
+                <input type="text" id="draw_text" class="form-control" style="height: 20px; font-size:15px;"
+                    placeholder="114514">
+            </form>
+            <div style="height: 20px;"></div>
+            <button type="button" id="draw_add" class="form-control" style="font-size: 15px;">
+                投一根签
+            </button>
+            <button type="button" id="draw_reset" class="form-control" style="font-size: 15px;">
+                清空签筒
+            </button>
+        </div>
+        <div style=" height: 5px">
+        </div>
+
+        <div style="font-size: 12px; color: gray;">
+            点击签上的字可以丢掉这根签
+        </div>
+        <div style="height: 25px;"></div>
+
+        <h2>签筒</h2>
+        <div id="draw_box">
+            <fieldset>
+                <br />
+                <!-- 签的数量 -->
+                <div id="box_state">
+                    <b>现在筒里没有签</b>
+                </div>
+                <br id="divide_br" hidden="hidden" />
+                <!-- 签的内容 -->
+                <div id="box_res">
+                </div>
+                <br />
+            </fieldset>
+        </div><br />
+        <div>
+            <form role="form" style="font-size: 15px;">
+                <input type="radio" name="draw_func" id="draw_back" class="draw-setting" checked>放回
+                <input type="radio" name="draw_func" id="draw_not_back" class="draw-setting">不放回
+                <div style="height: 5px;"></div>
+                <input type="radio" name="draw_times" id="draw_once" class="draw-setting" checked>抽一次
+                <input type="radio" name="draw_times" id="draw_multy" class="draw-setting">抽
+                <input type="text" id="draw_num" class="draw-setting" style="width: 60px;" placeholder="1919810"> 次
+            </form>
+            <div style="height: 20px;"></div>
+            <button type="button" id="draw_run" class="draw-setting" style="font-size: 25px; width: 80px;">
+                抽签
+            </button>
+        </div>
+        <div style="height: 30px;"></div>
+
+        <h2>抽签结果</h2>
+        <div style="height: 10px;"></div>
+        <fieldset>
+            <br />
+            <div id="draw_res" class="draw-result" style="font-size: 15px;">
+                <b>结果将显示在此处</b>
+            </div>
+            <br />
+        </fieldset>
+    </div>
+    <br />
+</body>
+
+</html>

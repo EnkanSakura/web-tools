@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多人运动分队</title>
+
+    <script src="../js/r6-group.js"></script>
+</head>
+
+<body style="font-size:20px; text-align: center;">
+    <div class="container">
+        <h1>多人运动分队</h1>
+        <h3>请选中至少⑥人</h3>
+        <form id="check_form" action="" method="get">
+            <fieldset><br>
+                <input type="checkbox" name="member" value="子夜">子夜&emsp;
+                <input type="checkbox" name="member" value="夜鸫">夜鸫<br>
+                <input type="checkbox" name="member" value="落子">落子&emsp;
+                <input type="checkbox" name="member" value="咕科">咕科<br>
+                <input type="checkbox" name="member" value="旧景">旧景&emsp;
+                <input type="checkbox" name="member" value="守护">守护<br>
+                <input type="checkbox" name="member" value="不笙">不笙&emsp;
+                <input type="checkbox" name="member" value="稚羽">稚羽<br><br>
+                <input type="hidden" name="results" id="results" value="">
+                <button type="button" onclick="all_select()">全选</button>
+                <button type="reset">全不选</button>
+                <button type="button" onclick="reverse_select()">反选</button>
+            </fieldset><br>
+        </form>
+        <button onclick="getElementById('result').innerHTML=rollTeam()"
+            style="height: 32px; width: 80px; font-size: 20px;">
+            分队
+        </button>&emsp;
+        <button onclick="getElementById('result').innerHTML=reset_web()"
+            style="height: 32px; width: 80px; font-size: 20px;">
+            重置
+        </button>
+        <p id='result'></p>
+    </div>
+</body>
+
+</html>
