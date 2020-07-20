@@ -14,7 +14,7 @@ var resString = "";
 var numbers = tool_name.length;
 
 for (var i = 0; i < numbers; ++i) {
-    resString += "<p><a href=\"" + base_url + tool_url[i] + ".html\">" + tool_name[i] + "</a></p>";
+    resString += "<p><a href=\"" + base_url + tool_url[i] + ".html\" style=\"text-decoration:none;\">" + tool_name[i] + "</a></p>";
 }
 $(document).ready(function () {
     $("#tool_list").css("font-size", "20px");
