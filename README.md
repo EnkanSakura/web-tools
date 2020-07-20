@@ -1,8 +1,8 @@
 # tools-on-web
 
-## 利用GitHub搭载的网页小工具，使用[CDN仓库](http://staticfile.org/)
+### 利用GitHub搭载的网页小工具，使用[CDN仓库](http://staticfile.org/)
 
-## 工具目录：[index here](https://enkansakura.github.io/web-tools/index.html)
+### 工具目录：[index here](https://enkansakura.github.io/web-tools/index.html)
 
 - [x] js与html分离
 - [ ] 独立的page分支
@@ -10,19 +10,19 @@
 
 # 工具菜单
 
-## 1、多人运动(?)分队
+### 1、多人运动(?)分队
 
 ​玩游戏组排人数较多时用于分两队排
 
 - [ ] 更改队伍人数上限、更多的队伍
 
-## 2、苏联笑话生成器
+### 2、苏联笑话生成器
 
 娱乐用
 
 新段子随缘加入（欢迎通过issue提供素材）
 
-## 3、抽签
+### 3、抽签
 
 不知道能用来做什么但感觉可能会用得上就做出来玩玩
 
@@ -36,6 +36,6 @@
 
 - [ ] help提示消息
 
-## 4、营销号生成器
+### 4、营销号生成器
 
 【在做了】
