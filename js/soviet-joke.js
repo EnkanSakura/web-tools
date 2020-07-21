@@ -66,5 +66,5 @@ $(document).ready(function () {
         $("#joke_res").html(resString);
         $("#joke_res").css("border", "thin solid");
         $("#joke_res").css("text-indent", "20px");
-    })
+    });
 });
