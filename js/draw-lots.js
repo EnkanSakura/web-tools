@@ -1,11 +1,11 @@
-// 记录每一根签的文字和随机量
+reg_9 = /9|Ⅸ|九|氿|玖|笨蛋/g;
 var draw_info = new Array();
 var draw_num = 0;
 
 $(document).ready(function () {
     // 投签
     $("#draw_add").click(function () {
-        var str_tmp = $("#draw_text").val();
+        var str_tmp = $("#draw_text").val().replace(reg_9, "⑨");
         if (str_tmp == "") {
             str_tmp = "114514";
         }
@@ -17,9 +17,10 @@ $(document).ready(function () {
         if (draw_info.length == 1) {
             document.getElementById("divide_br").hidden = false;
         }
-        $("#box_state").html("<b>筒里有" + draw_info.length + "根签</b>");
+        $("#box_state").html("<b>筒里有" + draw_info.length.toString().replace(/9/g, "⑨") + "根签</b>");
         $("#box_res").append("<label class=\"draw-str\" style=\"font-size: 18px;\">" + str_tmp + "</label><br />");
     });
+
     // 抽签功能
     $("#draw_run").click(function () {
         if (draw_info.length == 0) {
@@ -56,18 +57,31 @@ $(document).ready(function () {
                 alert("Error");
             }
         }
+        if (document.getElementById("draw_clear").hidden == true) {
+            document.getElementById("draw_clear").hidden = false;
+        }
     });
+
     // 页面重置
     $("#draw_reset").click(function () {
         $("#box_state").html("<b>现在筒里没有签</b>");
         $("#box_res").html("");
         $("#draw_res").html("<b>结果将显示在此处</b>");
         document.getElementById("divide_br").hidden = true;
+        document.getElementById("draw_clear").hidden = true;
         draw_info.length = 0;
         draw_num = 0;
     });
+
+    // 清空结果
+    $("#draw_clear").click(function () {
+        $("#draw_res").html("<b>结果将显示在此处</b>");
+        document.getElementById("draw_clear").hidden = true;
+        draw_num = 0
+    })
+
     // 点击签上的文字删除一根签
-    $("#draw_box").$("label").click(function () {
-        $(this).hide();
-    });
+    // $("#draw_box").$("label").click(function () {
+    //     $(this).hide();
+    // });
 });
