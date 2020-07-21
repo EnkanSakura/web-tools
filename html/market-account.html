@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>营销号生成器</title>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
+    <script src="../js/market-account.js"></script>
+    <link rel="stylesheet" href="../css/market-account.css">
+</head>
+
+<body style="font-size: 20px; text-align: center;">
+    <div class="container">
+        <h1>营销号生成器</h1>
+        <div id=event_input>
+            <table>
+                <tr>
+                    <td style="text-align: right;">
+                        <label for="name">主体：</label>
+                    </td>
+                    <td style="text-align: left; width: 250px;">
+                        <input type="text" id="in_subject" placeholder="营销号">
+                        <label for="name" class="alarm-text" id="alarm_1">为空</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        <label for="name">事件：</label>
+                    </td>
+                    <td style="text-align: left; width: 250px;">
+                        <input type="text" id="in_event" placeholder="被扬了">
+                        <label for="name" class="alarm-text" id="alarm_2">为空</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">
+                        <label for="name">另一种说法：</label>
+                    </td>
+                    <td style="text-align: left; width: 250px;">
+                        <input type="text" id="in_statement" placeholder="营销号的马没了">
+                        <label for="name" class="alarm-text" id="alarm_3">为空</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="font-size: 15px;">
+            <input type="radio" name="article_length" id="short_article" style="height: auto;" checked>
+            <label for="name">短文</label>
+            <input type="radio" name="article_length" id="long_article" style="height: auto;">
+            <label for="name">长文</label>
+        </div>
+        <br />
+        <div>
+            <button type="button" id="article_run">生成</button>
+        </div>
+        <p></p>
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="article_res" class="res-box"></div>
+                </td>
+                <td></td>
+            </tr>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

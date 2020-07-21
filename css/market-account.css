@@ -1,0 +1,39 @@
+table {
+    margin: auto;
+    border: none;
+}
+
+td {
+    height: 40px;
+}
+
+button {
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+}
+
+input {
+    font-size: 15px;
+    height: 20px;
+}
+
+.res-box {
+    width: 500px;
+    border: 2px solid #000000;
+    padding: 25px;
+    margin: 25px;
+    text-align: left;
+}
+
+.alarm-text {
+    font-size: 12px;
+    text-align: left;
+    color: #ff0000;
+    visibility: hidden;
+}
+
+.comment-area {
+    /* 待完成 */
+    font-size: 15px;
+}

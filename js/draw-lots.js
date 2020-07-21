@@ -34,15 +34,15 @@ $(document).ready(function () {
                     draw_index[0] = 1;
                 } else if (document.getElementById("draw_multy").checked) {
                     // 放回抽多次
-                    alert("暂未实现");
+                    alert("暂未实装");
                 }
             } else if (document.getElementById("draw_not_back").checked) {
                 if (document.getElementById("draw_once").checked) {
                     // 不放回抽一次
-                    alert("暂未实现");
+                    alert("暂未实装");
                 } else if (document.getElementById("draw_multy").checked) {
                     // 不放回抽多次
-                    alert("暂未实现");
+                    alert("暂未实装");
                 }
             }
             if (draw_index[0] != 0) {

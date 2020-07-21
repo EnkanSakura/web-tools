@@ -3,12 +3,14 @@ var base_url = rec_url.substring(0, rec_url.lastIndexOf('/') + 1) + "html/";
 var tool_name = [
     "多人游戏分队工具",
     "苏联笑话生成器",
-    "抽签筒"
+    "抽签筒",
+    "营销号生成器"
 ];
 var tool_url = [
     "game-group",
     "soviet-joke",
-    "draw-lots"
+    "draw-lots",
+    "market-account"
 ];
 var resString = "";
 var numbers = tool_name.length;
