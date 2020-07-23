@@ -46,10 +46,12 @@
 
 网上挺多，自己也做了一个玩玩
 
-第一次把css分离出来
+第一次写独立的css
 
 （不知道营销号要怎么翻译，就拆词直译成market-account）
 
-- [ ] 页面底部增加伪评论区
+长文章生成功能代码和素材取自[狗屁不通生成器](https://github.com/menzi11/BullshitGenerator/blob/master/index.js)
 
-- [ ] 长文章生成（需要搜集素材）
+- [x] 长文章生成（不是很完美）
+
+- [ ] 页面底部增加伪评论区
