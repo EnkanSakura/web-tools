@@ -83,14 +83,21 @@ function creat_long_article() {
     long_result += "<p style=\"line-height: 40px; font-size:25px\">" + para_space + base_article[0] + "<br />";
     while (long_result.length < 500) {
         var rnd = get_random(100);
+        var last_sentence = "";
         if (rnd < 5 && para.length > 200) {
             long_result += para + "<br />";
             para = para_space;
+            last_sentence = "para";
         } else if (rnd < 20) {
             para += get_sentence("sayings");
+            last_sentence = "sayings";
         } else {
             para += get_sentence("bosh");
+            last_sentence = "bosh";
         }
+    }
+    if (last_sentence == "bosh") {
+        para += get_sentence("bosh_end");
     }
     long_result += para;
     long_result += long_end + base_article[2] + "</p>";
