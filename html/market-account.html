@@ -53,16 +53,25 @@
         <br />
         <div>
             <button type="button" id="article_run">生成</button>
+            <button type="button" id="article_voice">朗读</button>
+        </div>
+        <p></p>
+        <div id="voice" style="display: none;">
+            <audio controls id="voice_control" src="">
+            </audio>
         </div>
         <p></p>
         <table>
             <tr>
-                <td></td>
+                <td>
+                    <div></div>
+                </td>
                 <td>
                     <div id="article_res" class="res-box"></div>
                 </td>
-                <td></td>
-            </tr>
+                <td>
+                    <div></div>
+                </td>
             </tr>
         </table>
     </div>
