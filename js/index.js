@@ -13,10 +13,11 @@ var tool_url = [
     "market-account"
 ];
 var resString = "";
-var numbers = tool_name.length;
 
-for (var i = 0; i < numbers; ++i) {
-    resString += "<p><a href=\"" + base_url + tool_url[i] + ".html\" style=\"text-decoration:none;\">" + tool_name[i] + "</a></p>";
+for (var i = 0; i < tool_name.length; ++i) {
+    resString += "<div class=\"single-tool\"><a href=\"" + base_url + tool_url[i] +
+        ".html\" style=\"text-decoration:none;\">" +
+        tool_name[i] + "</a></div>";
 }
 $(document).ready(function () {
     $("#tool_list").css("font-size", "20px");

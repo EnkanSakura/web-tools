@@ -7,27 +7,41 @@
     <title>苏联笑话生成器</title>
     <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
     <script src="../js/soviet-joke.js"></script>
+    <link rel="stylesheet" href="../css/soviet-joke.css">
 </head>
 
-<body style="font-size:20px; text-align: center;">
+<body>
     <div class="container">
         <h1>苏联笑话生成器</h1>
 
-        <form role="form">
-            <br class="form-group">
-            <label for="name">&emsp;&emsp;&emsp;要讽刺的事情是？&emsp;&emsp;&emsp;&emsp;</label>
-            <input type="text" id="joke_thing" class="form-control" placeholder="996"><br>
-            <label for="name">&emsp;&emsp;这件事是谁提出来的？&emsp;&emsp;&emsp;</label>
-            <input type="text" id="joke_man" class="form-control" placeholder="强东哥"><br>
-            <label for="name">提出者声称这件事有助于什么？&emsp;</label>
-            <input type="text" id="joke_goodfor" class="form-control" placeholder="建设一流公司"><br>
-            <label for="name">&emsp;&ensp;这件事针对的是哪些人？&ensp;&emsp;&emsp;</label>
-            <input type="text" id="joke_victim" class="form-control" placeholder="程序员"><br>
-            <label for="name">&emsp;&emsp;这件事起作用的范围？&emsp;&emsp;&emsp;</label>
-            <input type="text" id="joke_range" class="form-control" placeholder="公司"><br><br>
-        </form>
-        <div>
-            <button type="button" id="joke_run" class="btn btn-default">生成笑话！</button>
+        <div class="form-group">
+            <form role="form">
+                <table>
+                    <tr>
+                        <td><label class="form-label" for="name">要讽刺的事情是？</label></td>
+                        <td><input class="form-input" type="text" id="joke_thing" placeholder="996"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name">这件事是谁提出来的？</label></td>
+                        <td><input class="form-input" type="text" id="joke_man" placeholder="强东哥"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name">提出者声称这件事有助于什么？</label></td>
+                        <td><input class="form-input" type="text" id="joke_goodfor" placeholder="建设一流公司"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name">&ensp;这件事针对的是哪些人？&ensp;</label></td>
+                        <td><input class="form-input" type="text" id="joke_victim" placeholder="程序员"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name">这件事起作用的范围？</label></td>
+                        <td><input class="form-input" type="text" id="joke_range" placeholder="公司"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="button">
+            <button type="button" id="joke_run" class="btn btn-default">生成笑话 !</button>
         </div>
         <br />
 

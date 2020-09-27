@@ -1,0 +1,31 @@
+:root {
+    font-size: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 5rem;
+}
+
+table {
+    margin: auto;
+    left: 10%;
+}
+
+button {
+    font-size: 20px;
+}
+
+.container {
+    font-size: 2rem;
+}
+
+.form-label {
+    text-align: left;
+    margin: 0 2rem auto auto;
+}
+
+.button {
+    margin: 3rem;
+}

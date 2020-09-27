@@ -1,0 +1,14 @@
+:root {
+    font-size: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 5rem;
+}
+
+.single-tool {
+    font-size: 2rem;
+    margin: 2rem;
+}
