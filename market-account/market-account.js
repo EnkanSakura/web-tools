@@ -19,7 +19,7 @@ const para_space = "　　";
 const long_end = "总结的来说，SubjectEvent其实就是Statement， 大家可能会很惊讶Subject怎么会Event呢？但事实就是这样，小编也感到非常惊讶。"
 
 var request = new XMLHttpRequest();
-request.open("get", "../json/sayings.json"); /*设置请求方法与路径*/
+request.open("get", "./sayings.json"); /*设置请求方法与路径*/
 request.send(null);
 request.onload = function () {
     if (request.status == 200) {
