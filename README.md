@@ -54,4 +54,8 @@
 
 - [x] 长文章生成（不是很完美）
 
-- [ ] 页面底部增加伪评论区
+- [ ] 页面底部增加迫真评论区
+
+### 5、彩虹屁生成器（短篇幅）
+
+用[Haodong JU](https://github.com/juhaodong)的[彩虹屁](https://github.com/juhaodong/CaiHongPi)改了一点点，修复了一点点小bug
